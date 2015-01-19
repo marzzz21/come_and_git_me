@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/rise-app.iml" filepath="$PROJECT_DIR$/rise-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rise-app-grailsPlugins.iml" filepath="$PROJECT_DIR$/rise-app-grailsPlugins.iml" />
     </modules>
   </component>
 </project>

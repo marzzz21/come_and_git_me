@@ -1,0 +1,1201 @@
+2015-01-19 12:24:31,741 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: firstName for class: org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder
+	at com.rise.User._clinit__closure2(User.groovy:22)
+	at com.rise.User._clinit__closure2(User.groovy)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder.evaluate(MappingConfigurationBuilder.groovy:83)
+	at org.grails.datastore.mapping.config.AbstractGormMappingFactory.createMappedForm(AbstractGormMappingFactory.java:63)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:39)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:28)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValuePersistentEntity.<init>(KeyValuePersistentEntity.java:35)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValueMappingContext.createPersistentEntity(KeyValueMappingContext.java:95)
+	at org.grails.datastore.mapping.model.AbstractMappingContext.addPersistentEntities(AbstractMappingContext.java:174)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomains(DomainClassUnitTestMixin.groovy:81)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:114)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:113)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.builtin.JUnitFixtureMethodsExtension$FixtureType$FixtureMethodInterceptor.intercept(JUnitFixtureMethodsExtension.java:145)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at grails.test.runtime.TestRuntimeJunitAdapter$1$2.evaluate(TestRuntimeJunitAdapter.groovy:49)
+	at org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at grails.test.runtime.TestRuntimeJunitAdapter$3$4.evaluate(TestRuntimeJunitAdapter.groovy:76)
+	at org.spockframework.runtime.extension.builtin.ClassRuleInterceptor.intercept(ClassRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.junit.runners.Suite.runChild(Suite.java:127)
+	at org.junit.runners.Suite.runChild(Suite.java:26)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.codehaus.groovy.grails.test.spock.GrailsSpecTestType.doRun(GrailsSpecTestType.groovy:147)
+	at org.codehaus.groovy.grails.test.support.GrailsTestTypeSupport.run(GrailsTestTypeSupport.groovy:121)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runTests(GrailsProjectTestRunner.groovy:415)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.processTests(GrailsProjectTestRunner.groovy:395)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests_closure7(GrailsProjectTestRunner.groovy:313)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy:299)
+	at org.codehaus.groovy.grails.test.runner.GrailsProjectTestRunner.runAllTests(GrailsProjectTestRunner.groovy:214)
+	at org.codehaus.groovy.grails.cli.fork.testing.ForkedGrailsTestRunner.runInstance(ForkedGrailsTestRunner.groovy:128)
+	at org.codehaus.groovy.grails.cli.fork.ForkedGrailsProjectClassExecutor.run(ForkedGrailsProjectClassExecutor.groovy:74)
+	at org.codehaus.groovy.grails.cli.fork.testing.ForkedGrailsTestRunner.main(ForkedGrailsTestRunner.groovy:75)
+2015-01-19 12:24:31,752 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: firstName for class: org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder
+	at com.rise.User._clinit__closure2(User.groovy:22)
+	at org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder.evaluate(MappingConfigurationBuilder.groovy:83)
+	at org.grails.datastore.mapping.config.AbstractGormMappingFactory.createMappedForm(AbstractGormMappingFactory.java:63)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:39)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:28)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValuePersistentEntity.<init>(KeyValuePersistentEntity.java:35)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValueMappingContext.createPersistentEntity(KeyValueMappingContext.java:95)
+	at org.grails.datastore.mapping.model.AbstractMappingContext.addPersistentEntities(AbstractMappingContext.java:174)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomains(DomainClassUnitTestMixin.groovy:81)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:114)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:113)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.builtin.JUnitFixtureMethodsExtension$FixtureType$FixtureMethodInterceptor.intercept(JUnitFixtureMethodsExtension.java:145)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$1$2.evaluate(TestRuntimeJunitAdapter.groovy:49)
+	at org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$3$4.evaluate(TestRuntimeJunitAdapter.groovy:76)
+	at org.spockframework.runtime.extension.builtin.ClassRuleInterceptor.intercept(ClassRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+2015-01-19 12:24:31,770 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: firstName for class: org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder
+	at com.rise.User._clinit__closure2(User.groovy:22)
+	at org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder.evaluate(MappingConfigurationBuilder.groovy:83)
+	at org.grails.datastore.mapping.config.AbstractGormMappingFactory.createMappedForm(AbstractGormMappingFactory.java:63)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:39)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:28)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValuePersistentEntity.<init>(KeyValuePersistentEntity.java:35)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValueMappingContext.createPersistentEntity(KeyValueMappingContext.java:95)
+	at org.grails.datastore.mapping.model.AbstractMappingContext.addPersistentEntities(AbstractMappingContext.java:174)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomains(DomainClassUnitTestMixin.groovy:81)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:114)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:113)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.builtin.JUnitFixtureMethodsExtension$FixtureType$FixtureMethodInterceptor.intercept(JUnitFixtureMethodsExtension.java:145)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$1$2.evaluate(TestRuntimeJunitAdapter.groovy:49)
+	at org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$3$4.evaluate(TestRuntimeJunitAdapter.groovy:76)
+	at org.spockframework.runtime.extension.builtin.ClassRuleInterceptor.intercept(ClassRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+2015-01-19 12:24:31,777 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: firstName for class: org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder
+	at com.rise.User._clinit__closure2(User.groovy:22)
+	at org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder.evaluate(MappingConfigurationBuilder.groovy:83)
+	at org.grails.datastore.mapping.config.AbstractGormMappingFactory.createMappedForm(AbstractGormMappingFactory.java:63)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:39)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:28)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValuePersistentEntity.<init>(KeyValuePersistentEntity.java:35)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValueMappingContext.createPersistentEntity(KeyValueMappingContext.java:95)
+	at org.grails.datastore.mapping.model.AbstractMappingContext.addPersistentEntities(AbstractMappingContext.java:174)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomains(DomainClassUnitTestMixin.groovy:81)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:114)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:113)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.builtin.JUnitFixtureMethodsExtension$FixtureType$FixtureMethodInterceptor.intercept(JUnitFixtureMethodsExtension.java:145)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$1$2.evaluate(TestRuntimeJunitAdapter.groovy:49)
+	at org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$3$4.evaluate(TestRuntimeJunitAdapter.groovy:76)
+	at org.spockframework.runtime.extension.builtin.ClassRuleInterceptor.intercept(ClassRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+2015-01-19 12:24:31,793 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: firstName for class: org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder
+	at com.rise.User._clinit__closure2(User.groovy:22)
+	at org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder.evaluate(MappingConfigurationBuilder.groovy:83)
+	at org.grails.datastore.mapping.config.AbstractGormMappingFactory.createMappedForm(AbstractGormMappingFactory.java:63)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:39)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:28)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValuePersistentEntity.<init>(KeyValuePersistentEntity.java:35)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValueMappingContext.createPersistentEntity(KeyValueMappingContext.java:95)
+	at org.grails.datastore.mapping.model.AbstractMappingContext.addPersistentEntities(AbstractMappingContext.java:174)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomains(DomainClassUnitTestMixin.groovy:81)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:114)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:113)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.builtin.JUnitFixtureMethodsExtension$FixtureType$FixtureMethodInterceptor.intercept(JUnitFixtureMethodsExtension.java:145)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$1$2.evaluate(TestRuntimeJunitAdapter.groovy:49)
+	at org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$3$4.evaluate(TestRuntimeJunitAdapter.groovy:76)
+	at org.spockframework.runtime.extension.builtin.ClassRuleInterceptor.intercept(ClassRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+2015-01-19 12:24:31,795 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: firstName for class: org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder
+	at com.rise.User._clinit__closure2(User.groovy:22)
+	at org.grails.datastore.mapping.config.groovy.MappingConfigurationBuilder.evaluate(MappingConfigurationBuilder.groovy:83)
+	at org.grails.datastore.mapping.config.AbstractGormMappingFactory.createMappedForm(AbstractGormMappingFactory.java:63)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:39)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.GormKeyValueMappingFactory.createMappedForm(GormKeyValueMappingFactory.java:28)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValuePersistentEntity.<init>(KeyValuePersistentEntity.java:35)
+	at org.grails.datastore.mapping.keyvalue.mapping.config.KeyValueMappingContext.createPersistentEntity(KeyValueMappingContext.java:95)
+	at org.grails.datastore.mapping.model.AbstractMappingContext.addPersistentEntities(AbstractMappingContext.java:174)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomains(DomainClassUnitTestMixin.groovy:81)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:114)
+	at grails.test.mixin.domain.DomainClassUnitTestMixin.mockDomain(DomainClassUnitTestMixin.groovy:113)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.builtin.JUnitFixtureMethodsExtension$FixtureType$FixtureMethodInterceptor.intercept(JUnitFixtureMethodsExtension.java:145)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$1$2.evaluate(TestRuntimeJunitAdapter.groovy:49)
+	at org.spockframework.runtime.extension.builtin.TestRuleInterceptor.intercept(TestRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.util.ReflectionUtil.invokeMethod(ReflectionUtil.java:138)
+	at org.spockframework.runtime.extension.MethodInvocation.invokeTargetMethod(MethodInvocation.java:91)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:85)
+	at org.spockframework.runtime.extension.builtin.AbstractRuleInterceptor$1.evaluate(AbstractRuleInterceptor.java:37)
+	at grails.test.runtime.TestRuntimeJunitAdapter$3$4.evaluate(TestRuntimeJunitAdapter.groovy:76)
+	at org.spockframework.runtime.extension.builtin.ClassRuleInterceptor.intercept(ClassRuleInterceptor.java:38)
+	at org.spockframework.runtime.extension.MethodInvocation.proceed(MethodInvocation.java:84)
+2015-01-19 12:25:34,574 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:25:34,725 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:25:35,281 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:25:35,415 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:25:35,973 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:25:36,109 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:37:04,412 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:22)
+2015-01-19 12:37:04,534 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:22)
+2015-01-19 12:37:05,012 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:22)
+2015-01-19 12:37:05,129 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:22)
+2015-01-19 12:37:05,568 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:22)
+2015-01-19 12:37:05,603 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:22)
+2015-01-19 12:42:21,930 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:42:22,050 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:42:22,504 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:42:22,620 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:42:23,099 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:42:23,171 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.buildWithoutSave() is applicable for argument types: (java.util.LinkedHashMap) values: [[emailAddress:]]
+	at org.grails.datastore.gorm.GormStaticApi.methodMissing(GormStaticApi.groovy:92)
+	at org.grails.datastore.gorm.internal.StaticMethodInvokingClosure.call(StaticMethodInvokingClosure.groovy:32)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:23)
+2015-01-19 12:43:35,485 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.validate() is applicable for argument types: (java.lang.String) values: []
+Possible solutions: validate(), validate(boolean), validate(java.util.List), validate(java.util.Map)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:43:35,550 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.validate() is applicable for argument types: (java.lang.String) values: []
+Possible solutions: validate(), validate(boolean), validate(java.util.List), validate(java.util.Map)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:43:35,758 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.validate() is applicable for argument types: (java.lang.String) values: []
+Possible solutions: validate(), validate(boolean), validate(java.util.List), validate(java.util.Map)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:43:35,815 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.validate() is applicable for argument types: (java.lang.String) values: []
+Possible solutions: validate(), validate(boolean), validate(java.util.List), validate(java.util.Map)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:43:36,021 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.validate() is applicable for argument types: (java.lang.String) values: []
+Possible solutions: validate(), validate(boolean), validate(java.util.List), validate(java.util.Map)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:43:36,065 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingMethodException: No signature of method: com.rise.User.validate() is applicable for argument types: (java.lang.String) values: []
+Possible solutions: validate(), validate(boolean), validate(java.util.List), validate(java.util.Map)
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:47:20,222 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+user.validate(['emailAddress']) == validationResult
+|    |                          |  |
+|    false                      |  true
+com.rise.User : (unsaved)       false
+
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:47:20,227 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+user.validate(['emailAddress']) == validationResult
+|    |                          |  |
+|    false                      |  true
+com.rise.User : (unsaved)       false
+
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:47:20,229 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.validate(['emailAddress']) == validationResult
+|    |                          |  |
+|    false                      |  true
+com.rise.User : (unsaved)       false
+
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:47:20,229 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.validate(['emailAddress']) == validationResult
+|    |                          |  |
+|    false                      |  true
+com.rise.User : (unsaved)       false
+
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:47:20,237 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.validate(['emailAddress']) == validationResult
+|    |                          |  |
+|    false                      |  true
+com.rise.User : (unsaved)       false
+
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:47:20,238 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.validate(['emailAddress']) == validationResult
+|    |                          |  |
+|    false                      |  true
+com.rise.User : (unsaved)       false
+
+	at com.rise.UserSpec.emailAddress shouldn't be blank, and should be unique and in correct format(UserSpec.groovy:27)
+2015-01-19 12:58:53,171 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+user.validate(['emailAddress'])
+|    |
+|    false
+com.rise.User : (unsaved)
+
+	at com.rise.UserSpec.emailAddress should be in correct format(UserSpec.groovy:33)
+2015-01-19 12:58:53,175 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+user.validate(['emailAddress'])
+|    |
+|    false
+com.rise.User : (unsaved)
+
+	at com.rise.UserSpec.emailAddress should be in correct format(UserSpec.groovy:33)
+2015-01-19 12:58:53,177 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.validate(['emailAddress'])
+|    |
+|    false
+com.rise.User : (unsaved)
+
+	at com.rise.UserSpec.emailAddress should be in correct format(UserSpec.groovy:33)
+2015-01-19 12:58:53,177 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.validate(['emailAddress'])
+|    |
+|    false
+com.rise.User : (unsaved)
+
+	at com.rise.UserSpec.emailAddress should be in correct format(UserSpec.groovy:33)
+2015-01-19 12:58:53,184 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.validate(['emailAddress'])
+|    |
+|    false
+com.rise.User : (unsaved)
+
+	at com.rise.UserSpec.emailAddress should be in correct format(UserSpec.groovy:33)
+2015-01-19 12:58:53,184 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+user.validate(['emailAddress'])
+|    |
+|    false
+com.rise.User : (unsaved)
+
+	at com.rise.UserSpec.emailAddress should be in correct format(UserSpec.groovy:33)
+2015-01-19 13:04:20,215 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(["emailAddress"])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:04:20,219 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(["emailAddress"])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:04:20,221 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(["emailAddress"])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:04:20,221 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(["emailAddress"])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:04:20,229 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(["emailAddress"])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:04:20,229 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(["emailAddress"])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:05:43,278 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!anotherUser.validate(["emailAddress"])
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:05:43,283 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!anotherUser.validate(["emailAddress"])
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:05:43,287 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!anotherUser.validate(["emailAddress"])
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:05:43,288 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!anotherUser.validate(["emailAddress"])
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:05:43,297 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!anotherUser.validate(["emailAddress"])
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:05:43,298 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!anotherUser.validate(["emailAddress"])
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:06:55,948 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!anotherUser.validate()
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:06:55,952 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!anotherUser.validate()
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:06:55,955 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!anotherUser.validate()
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:06:55,956 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!anotherUser.validate()
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:06:55,962 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!anotherUser.validate()
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:06:55,963 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!anotherUser.validate()
+||           |
+||           true
+|com.rise.User : 2
+false
+
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:44)
+2015-01-19 13:22:47,701 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'emailAddress': rejected value [rise@rise.com]; codes [com.rise.User.emailAddress.unique.error.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.error.emailAddress,com.rise.User.emailAddress.unique.error.java.lang.String,com.rise.User.emailAddress.unique.error,user.emailAddress.unique.error.com.rise.User.emailAddress,user.emailAddress.unique.error.emailAddress,user.emailAddress.unique.error.java.lang.String,user.emailAddress.unique.error,com.rise.User.emailAddress.unique.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.emailAddress,com.rise.User.emailAddress.unique.java.lang.String,com.rise.User.emailAddress.unique,user.emailAddress.unique.com.rise.User.emailAddress,user.emailAddress.unique.emailAddress,user.emailAddress.unique.java.lang.String,user.emailAddress.unique,unique.com.rise.User.emailAddress,unique.emailAddress,unique.java.lang.String,unique]; arguments [emailAddress,class com.rise.User,rise@rise.com]; default message [null]
+]]
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:42)
+2015-01-19 13:22:47,705 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'emailAddress': rejected value [rise@rise.com]; codes [com.rise.User.emailAddress.unique.error.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.error.emailAddress,com.rise.User.emailAddress.unique.error.java.lang.String,com.rise.User.emailAddress.unique.error,user.emailAddress.unique.error.com.rise.User.emailAddress,user.emailAddress.unique.error.emailAddress,user.emailAddress.unique.error.java.lang.String,user.emailAddress.unique.error,com.rise.User.emailAddress.unique.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.emailAddress,com.rise.User.emailAddress.unique.java.lang.String,com.rise.User.emailAddress.unique,user.emailAddress.unique.com.rise.User.emailAddress,user.emailAddress.unique.emailAddress,user.emailAddress.unique.java.lang.String,user.emailAddress.unique,unique.com.rise.User.emailAddress,unique.emailAddress,unique.java.lang.String,unique]; arguments [emailAddress,class com.rise.User,rise@rise.com]; default message [null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:42)
+2015-01-19 13:22:47,719 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'emailAddress': rejected value [rise@rise.com]; codes [com.rise.User.emailAddress.unique.error.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.error.emailAddress,com.rise.User.emailAddress.unique.error.java.lang.String,com.rise.User.emailAddress.unique.error,user.emailAddress.unique.error.com.rise.User.emailAddress,user.emailAddress.unique.error.emailAddress,user.emailAddress.unique.error.java.lang.String,user.emailAddress.unique.error,com.rise.User.emailAddress.unique.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.emailAddress,com.rise.User.emailAddress.unique.java.lang.String,com.rise.User.emailAddress.unique,user.emailAddress.unique.com.rise.User.emailAddress,user.emailAddress.unique.emailAddress,user.emailAddress.unique.java.lang.String,user.emailAddress.unique,unique.com.rise.User.emailAddress,unique.emailAddress,unique.java.lang.String,unique]; arguments [emailAddress,class com.rise.User,rise@rise.com]; default message [null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:42)
+2015-01-19 13:22:47,720 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'emailAddress': rejected value [rise@rise.com]; codes [com.rise.User.emailAddress.unique.error.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.error.emailAddress,com.rise.User.emailAddress.unique.error.java.lang.String,com.rise.User.emailAddress.unique.error,user.emailAddress.unique.error.com.rise.User.emailAddress,user.emailAddress.unique.error.emailAddress,user.emailAddress.unique.error.java.lang.String,user.emailAddress.unique.error,com.rise.User.emailAddress.unique.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.emailAddress,com.rise.User.emailAddress.unique.java.lang.String,com.rise.User.emailAddress.unique,user.emailAddress.unique.com.rise.User.emailAddress,user.emailAddress.unique.emailAddress,user.emailAddress.unique.java.lang.String,user.emailAddress.unique,unique.com.rise.User.emailAddress,unique.emailAddress,unique.java.lang.String,unique]; arguments [emailAddress,class com.rise.User,rise@rise.com]; default message [null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:42)
+2015-01-19 13:22:47,727 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'emailAddress': rejected value [rise@rise.com]; codes [com.rise.User.emailAddress.unique.error.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.error.emailAddress,com.rise.User.emailAddress.unique.error.java.lang.String,com.rise.User.emailAddress.unique.error,user.emailAddress.unique.error.com.rise.User.emailAddress,user.emailAddress.unique.error.emailAddress,user.emailAddress.unique.error.java.lang.String,user.emailAddress.unique.error,com.rise.User.emailAddress.unique.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.emailAddress,com.rise.User.emailAddress.unique.java.lang.String,com.rise.User.emailAddress.unique,user.emailAddress.unique.com.rise.User.emailAddress,user.emailAddress.unique.emailAddress,user.emailAddress.unique.java.lang.String,user.emailAddress.unique,unique.com.rise.User.emailAddress,unique.emailAddress,unique.java.lang.String,unique]; arguments [emailAddress,class com.rise.User,rise@rise.com]; default message [null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:42)
+2015-01-19 13:22:47,727 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'emailAddress': rejected value [rise@rise.com]; codes [com.rise.User.emailAddress.unique.error.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.error.emailAddress,com.rise.User.emailAddress.unique.error.java.lang.String,com.rise.User.emailAddress.unique.error,user.emailAddress.unique.error.com.rise.User.emailAddress,user.emailAddress.unique.error.emailAddress,user.emailAddress.unique.error.java.lang.String,user.emailAddress.unique.error,com.rise.User.emailAddress.unique.com.rise.User.emailAddress,com.rise.User.emailAddress.unique.emailAddress,com.rise.User.emailAddress.unique.java.lang.String,com.rise.User.emailAddress.unique,user.emailAddress.unique.com.rise.User.emailAddress,user.emailAddress.unique.emailAddress,user.emailAddress.unique.java.lang.String,user.emailAddress.unique,unique.com.rise.User.emailAddress,unique.emailAddress,unique.java.lang.String,unique]; arguments [emailAddress,class com.rise.User,rise@rise.com]; default message [null]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.emailAddress shoudl be unique(UserSpec.groovy:42)
+2015-01-19 13:31:16,264 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:16,278 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:16,307 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:16,314 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:16,350 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:16,357 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:16,950 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:16,957 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:16,984 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:16,991 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:17,018 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:31:17,025 [main] ERROR StackTrace  - Full Stack Trace:
+groovy.lang.MissingPropertyException: No such property: passwordInput for class: com.rise.UserSpec
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:32:06,456 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(["password"])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:32:06,460 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(["password"])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:32:06,463 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(["password"])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:32:06,464 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(["password"])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:32:06,470 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(["password"])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:32:06,470 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(["password"])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:34:36,528 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:34:36,532 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:34:36,534 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:34:36,534 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:34:36,541 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:34:36,541 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:43:56,699 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:43:56,705 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:43:56,708 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:43:56,708 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:43:56,716 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:43:56,716 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:46:40,006 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'password': rejected value []; codes [com.rise.User.password.blank.error.com.rise.User.password,com.rise.User.password.blank.error.password,com.rise.User.password.blank.error.java.lang.String,com.rise.User.password.blank.error,user.password.blank.error.com.rise.User.password,user.password.blank.error.password,user.password.blank.error.java.lang.String,user.password.blank.error,com.rise.User.password.blank.com.rise.User.password,com.rise.User.password.blank.password,com.rise.User.password.blank.java.lang.String,com.rise.User.password.blank,user.password.blank.com.rise.User.password,user.password.blank.password,user.password.blank.java.lang.String,user.password.blank,blank.com.rise.User.password,blank.password,blank.java.lang.String,blank]; arguments [password,class com.rise.User]; default message [Property [{0}] of class [{1}] cannot be blank]
+]]
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrConstructorNewInstance(ReflectiveInterceptor.java:1002)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at org.springsource.loaded.ri.ReflectiveInterceptor.jlrMethodInvoke(ReflectiveInterceptor.java:1270)
+	at groovy.lang.Closure.call(Closure.java:423)
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:46:40,009 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'password': rejected value []; codes [com.rise.User.password.blank.error.com.rise.User.password,com.rise.User.password.blank.error.password,com.rise.User.password.blank.error.java.lang.String,com.rise.User.password.blank.error,user.password.blank.error.com.rise.User.password,user.password.blank.error.password,user.password.blank.error.java.lang.String,user.password.blank.error,com.rise.User.password.blank.com.rise.User.password,com.rise.User.password.blank.password,com.rise.User.password.blank.java.lang.String,com.rise.User.password.blank,user.password.blank.com.rise.User.password,user.password.blank.password,user.password.blank.java.lang.String,user.password.blank,blank.com.rise.User.password,blank.password,blank.java.lang.String,blank]; arguments [password,class com.rise.User]; default message [Property [{0}] of class [{1}] cannot be blank]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:46:40,019 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'password': rejected value []; codes [com.rise.User.password.blank.error.com.rise.User.password,com.rise.User.password.blank.error.password,com.rise.User.password.blank.error.java.lang.String,com.rise.User.password.blank.error,user.password.blank.error.com.rise.User.password,user.password.blank.error.password,user.password.blank.error.java.lang.String,user.password.blank.error,com.rise.User.password.blank.com.rise.User.password,com.rise.User.password.blank.password,com.rise.User.password.blank.java.lang.String,com.rise.User.password.blank,user.password.blank.com.rise.User.password,user.password.blank.password,user.password.blank.java.lang.String,user.password.blank,blank.com.rise.User.password,blank.password,blank.java.lang.String,blank]; arguments [password,class com.rise.User]; default message [Property [{0}] of class [{1}] cannot be blank]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:46:40,019 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'password': rejected value []; codes [com.rise.User.password.blank.error.com.rise.User.password,com.rise.User.password.blank.error.password,com.rise.User.password.blank.error.java.lang.String,com.rise.User.password.blank.error,user.password.blank.error.com.rise.User.password,user.password.blank.error.password,user.password.blank.error.java.lang.String,user.password.blank.error,com.rise.User.password.blank.com.rise.User.password,com.rise.User.password.blank.password,com.rise.User.password.blank.java.lang.String,com.rise.User.password.blank,user.password.blank.com.rise.User.password,user.password.blank.password,user.password.blank.java.lang.String,user.password.blank,blank.com.rise.User.password,blank.password,blank.java.lang.String,blank]; arguments [password,class com.rise.User]; default message [Property [{0}] of class [{1}] cannot be blank]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:46:40,026 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'password': rejected value []; codes [com.rise.User.password.blank.error.com.rise.User.password,com.rise.User.password.blank.error.password,com.rise.User.password.blank.error.java.lang.String,com.rise.User.password.blank.error,user.password.blank.error.com.rise.User.password,user.password.blank.error.password,user.password.blank.error.java.lang.String,user.password.blank.error,com.rise.User.password.blank.com.rise.User.password,com.rise.User.password.blank.password,com.rise.User.password.blank.java.lang.String,com.rise.User.password.blank,user.password.blank.com.rise.User.password,user.password.blank.password,user.password.blank.java.lang.String,user.password.blank,blank.com.rise.User.password,blank.password,blank.java.lang.String,blank]; arguments [password,class com.rise.User]; default message [Property [{0}] of class [{1}] cannot be blank]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:46:40,027 [main] ERROR StackTrace  - Full Stack Trace:
+java.lang.Exception: Unable to build valid com.rise.User instance, errors: [[	org.grails.datastore.mapping.validation.ValidationErrors: 1 errors
+Field error in object 'com.rise.User' on field 'password': rejected value []; codes [com.rise.User.password.blank.error.com.rise.User.password,com.rise.User.password.blank.error.password,com.rise.User.password.blank.error.java.lang.String,com.rise.User.password.blank.error,user.password.blank.error.com.rise.User.password,user.password.blank.error.password,user.password.blank.error.java.lang.String,user.password.blank.error,com.rise.User.password.blank.com.rise.User.password,com.rise.User.password.blank.password,com.rise.User.password.blank.java.lang.String,com.rise.User.password.blank,user.password.blank.com.rise.User.password,user.password.blank.password,user.password.blank.java.lang.String,user.password.blank,blank.com.rise.User.password,blank.password,blank.java.lang.String,blank]; arguments [password,class com.rise.User]; default message [Property [{0}] of class [{1}] cannot be blank]
+]]
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:243)
+	at grails.buildtestdata.DomainInstanceBuilder.save(DomainInstanceBuilder.groovy:231)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:137)
+	at grails.buildtestdata.DomainInstanceBuilder.build(DomainInstanceBuilder.groovy:135)
+	at grails.buildtestdata.BuildTestDataService.addBuildMethods_closure5(BuildTestDataService.groovy:45)
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:50)
+2015-01-19 13:46:40,239 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:46:40,243 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:46:40,247 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:46:40,248 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:46:40,248 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 13:46:40,249 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : 1
+false
+
+	at com.rise.UserSpec.password should not be blank and must be at least 6 characters(UserSpec.groovy:53)
+2015-01-19 14:01:41,463 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:53)
+2015-01-19 14:01:41,467 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:53)
+2015-01-19 14:01:41,471 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:53)
+2015-01-19 14:01:41,471 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:53)
+2015-01-19 14:01:41,478 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:53)
+2015-01-19 14:01:41,478 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:53)
+2015-01-19 14:02:34,041 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:55)
+2015-01-19 14:02:34,047 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:55)
+2015-01-19 14:02:34,052 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:55)
+2015-01-19 14:02:34,052 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:55)
+2015-01-19 14:02:34,059 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:55)
+2015-01-19 14:02:34,059 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+!user.validate(['password'])
+||    |
+||    true
+|com.rise.User : (unsaved)
+false
+
+	at com.rise.UserSpec.password should not be blank and must have a length of at least 6 characters(UserSpec.groovy:55)
+2015-01-19 14:22:34,373 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+riseInfo.validate(['framedRoute'])
+|        |
+|        false
+com.rise.RiseInfo : (unsaved)
+
+	at com.rise.RiseInfoSpec.framedRoute is an optional attribute, hence, it accepts blank/null values(RiseInfoSpec.groovy:33)
+2015-01-19 14:22:34,378 [main] ERROR StackTrace  - Full Stack Trace:
+Condition not satisfied:
+
+riseInfo.validate(['framedRoute'])
+|        |
+|        false
+com.rise.RiseInfo : (unsaved)
+
+	at com.rise.RiseInfoSpec.framedRoute is an optional attribute, hence, it accepts blank/null values(RiseInfoSpec.groovy:33)
+2015-01-19 14:22:34,382 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+riseInfo.validate(['framedRoute'])
+|        |
+|        false
+com.rise.RiseInfo : (unsaved)
+
+	at com.rise.RiseInfoSpec.framedRoute is an optional attribute, hence, it accepts blank/null values(RiseInfoSpec.groovy:33)
+2015-01-19 14:22:34,382 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+riseInfo.validate(['framedRoute'])
+|        |
+|        false
+com.rise.RiseInfo : (unsaved)
+
+	at com.rise.RiseInfoSpec.framedRoute is an optional attribute, hence, it accepts blank/null values(RiseInfoSpec.groovy:33)
+2015-01-19 14:22:34,389 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+riseInfo.validate(['framedRoute'])
+|        |
+|        false
+com.rise.RiseInfo : (unsaved)
+
+	at com.rise.RiseInfoSpec.framedRoute is an optional attribute, hence, it accepts blank/null values(RiseInfoSpec.groovy:33)
+2015-01-19 14:22:34,389 [main] ERROR StackTrace  - Full Stack Trace:
+junit.framework.AssertionFailedError: Condition not satisfied:
+
+riseInfo.validate(['framedRoute'])
+|        |
+|        false
+com.rise.RiseInfo : (unsaved)
+
+	at com.rise.RiseInfoSpec.framedRoute is an optional attribute, hence, it accepts blank/null values(RiseInfoSpec.groovy:33)

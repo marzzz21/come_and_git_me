@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="mihael.keehl" id="0" name="ClientSpec" package="com.rise" tests="3" time="7.543" timestamp="2015-01-19T08:15:23">
+      <properties />
+
+      <testcase classname="com.rise.ClientSpec" name="user should not be null" time="5.432" />
+
+      <testcase classname="com.rise.ClientSpec" name="riseInfo should not be null" time="1.587" />
+
+      <testcase classname="com.rise.ClientSpec" name="should successfully save when user and riseInfo is NOT null" time="0.454" />
+
+      <system-out><![CDATA[--Output from user should not be null--
+--Output from riseInfo should not be null--
+--Output from should successfully save when user and riseInfo is NOT null--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from user should not be null--
+--Output from riseInfo should not be null--
+--Output from should successfully save when user and riseInfo is NOT null--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

@@ -8,7 +8,7 @@ class RiseInfo {
 
     static constraints = {
         staticIP blank: false
-        framedRoute blank: true
+        framedRoute blank: true, nullable: true
         rateLimit blank: false
     }
 

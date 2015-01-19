@@ -6,7 +6,7 @@ class Client {
     RiseInfo riseInfo
 
     static constraints = {
-        user unique: true
-        riseInfo nullable: true
+        user nullable: false
+        riseInfo nullable: false
     }
 }

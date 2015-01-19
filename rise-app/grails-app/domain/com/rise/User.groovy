@@ -2,6 +2,8 @@ package com.rise
 
 class User {
 
+    public static final int PASSWORD_MIN_SIZE = 6
+
 	transient springSecurityService
 
 	String emailAddress
@@ -18,8 +20,9 @@ class User {
 
 	static constraints = {
         emailAddress blank: false, unique: true, email: true
-		password blank: false
-        [firstName, lastName] blank: false
+		password blank: false, minSize: PASSWORD_MIN_SIZE
+        firstName blank: false
+        lastName blank: false
 	}
 
 	static mapping = {

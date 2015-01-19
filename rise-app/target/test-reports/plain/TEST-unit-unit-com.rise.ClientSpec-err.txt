@@ -1,0 +1,3 @@
+--Output from user should not be null--
+--Output from riseInfo should not be null--
+--Output from should successfully save when user and riseInfo is NOT null--

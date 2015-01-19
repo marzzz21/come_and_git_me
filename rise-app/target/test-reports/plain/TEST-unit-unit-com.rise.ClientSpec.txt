@@ -1,0 +1,16 @@
+Testsuite: com.rise.ClientSpec
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 7.543 sec
+------------- Standard Output ---------------
+--Output from user should not be null--
+--Output from riseInfo should not be null--
+--Output from should successfully save when user and riseInfo is NOT null--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from user should not be null--
+--Output from riseInfo should not be null--
+--Output from should successfully save when user and riseInfo is NOT null--
+------------- ---------------- ---------------
+
+Testcase: user should not be null took 5.432 sec
+Testcase: riseInfo should not be null took 1.587 sec
+Testcase: should successfully save when user and riseInfo is NOT null took 0.454 sec
